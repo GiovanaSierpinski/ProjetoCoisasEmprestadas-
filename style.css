@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  background-color: #f1e3dd;
+  
+}
+
+#img-box{
+  width: 300px;
+  margin: 0px auto;
+}
+
+img{
+  text-align: center;
+}
+
+header {
+  background-color: #667292;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #f1e3dd;
+  border-style: outset;
+}
+
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #c83349;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1e3dd;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid  #667292;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  background-color:  #c83349;
+  color: #f1e3dd;
+  padding: 15px;
+  border: 1px solid  #667292;
+}
+
+tr {
+  text-align: center;
+  color:  #667292;
+  padding:  15px;
+  border: 1px solid #667292;
+}
+
+td {
+  height: 50px;
+  vertical-align: center;
+  padding: 15px;
+  border: 1px solid  #667292;
+}
+
+tr:hover {background-color: #eeac99}
+
+
+/* Style the footer */
+footer {
+  background-color: #667292;
+  padding: 50px;
+  text-align: center;
+  font-size: 15px;
+  color: #f1e3dd;
+}
+
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+
+ul#menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 0;
+}
+
+ul#menu li a {
+  display: block;
+  color: #f1e3dd;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+ul#menu li a:hover:not(.active) {
+  background-color: #eeac99;
+  color:#c83349;
+
+}
+
+input[type=text], input[type=date], input[type=password], input[type=email], select, textarea {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: 1px solid #667292;
+  border-radius: 20px;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #667292;
+  
+}
+
+input[type=submit] {
+  font-weight: 700;
+  width: 100%;
+  background-color: #667292;
+  color: #f1e3dd;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color:#c83349;
+}
+
+label {
+  font-weight: 600;
+  color:  #667292;
+}
+
+#cadastrar{
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0px;
+  display: inline-block;
+  border: none;
+  border-radius: 25px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #667292;
+  color: #f1e3dd;
+  text-align: center;
+}
+
+#cadastrar:hover {
+  background-color:#c83349;
+  border: none;
+}
